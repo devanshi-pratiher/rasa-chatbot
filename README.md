@@ -1,2 +1,3 @@
-# rasa-chatbot
-home chatbot
+# RASA Chatbot: Home Automation
+
+
