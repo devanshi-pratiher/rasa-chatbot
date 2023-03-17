@@ -20,10 +20,11 @@
   - Can understand multiple rooms and different devices that users can control/ have access to. 
 
 ### Challenges
-- Laptop is an Apple Mac M1 Pro Chip.
-- Faced many installation issues with Python version and dependencies that are in different versions correlating with the environment. 
+- Initially used my laptop which is an Apple Mac M1 Pro Chip.
+  - Faced many installation issues with Python version and dependencies that are in different versions correlating with the environment. 
+  - Did not work after 2+ days of trying to configure issues.
 - Switched to using Ubuntu laptop.
-- Faced more issues since my laptop was really slow.
+- Faced more issues since it was a really old laptop which was really slow.
 - Very sensitive: small changes breaking the chatbot.
 - Taking around 5 to 10 minutes to configure each change in RASA.
 - Needed more time to fix bugs.
