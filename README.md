@@ -45,6 +45,16 @@
 - Improve user experience make it easier to interact with home automation systems.
 
 
+### Build Commands
+Build
+	rasa train nlu
+	rasa train
+Open a Terminal
+	rasa run -m models --enable-api --cors "*" -p 5021
+Open a Terminal
+	rasa run action -vv
+Open Browser
+	home.html
 
 
 
