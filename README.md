@@ -4,7 +4,32 @@
 ### Python Version: 3.8.0
 ### Used Linux Ubuntu
 
-#### Insights
+### Operations Performed:
+- Ability to understand 20 user utterances/queries (including reasonable variations of those queries).
+- Ability to have at least 2 multi-turn conversations where the user may ask follow-up questions once the bot responds to their original query.
+- Ability to collect data from the user, e.g., on what date did the issue occur, how many items did you have in your order, etc.
+- Ability to engage in some amount of small talk (e.g., hi, how are you, etc.)
+- Ability to use a database (SQLite) to store information obtained from the user (note that interacting with the database does not count as using an API)
+
+  - User starts with greetings.
+  - Chatbot asks about username and password (which is saved in the database).
+  - Then it inquires about Control or Status and provides options such as Light, Fan, AC, Alarms.
+  - After choosing, the bot inquires about which room the user wants to make changes/ know about the status in.
+  - User can make changes such as Turn light off, on, etc.
+  - Also has ability to know if user is sad/ happy and appropriately responds.
+  - Can understand multiple rooms and different devices that users can control/ have access to. 
+
+### Challenges
+- Laptop is an Apple Mac M1 Pro Chip.
+- Faced many installation issues with Python version and dependencies that are in different versions correlating with the environment. 
+- Switched to using Ubuntu laptop.
+- Faced more issues since my laptop was really slow.
+- Very sensitive: small changes breaking the chatbot.
+- Taking around 5 to 10 minutes to configure each change in RASA.
+- Needed more time to fix bugs.
+
+
+### Insights
 ##### Open-Source
 - Rasa is an open-source platform: free and have access to the source code. 
 - Save money on licensing fees and more control over the development process.
@@ -18,14 +43,7 @@
 - Chatbot can understand and respond to complex user queries in an intuitive way. 
 - Improve user experience make it easier to interact with home automation systems.
 
-#### Challenges
-- Laptop is an Apple Mac M1 Pro Chip.
-- Faced many installation issues with Python version and dependencies that are in different versions correlating with the environment. 
-- Switched to using Ubuntu laptop.
-- Faced more issues since my laptop was really slow.
-- Very sensitive: small changes breaking the chatbot.
-- Taking around 5 to 10 minutes to configure each change in RASA.
-- Needed more time to fix bugs.
+
 
 
 
