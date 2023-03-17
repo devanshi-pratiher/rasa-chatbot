@@ -46,15 +46,15 @@
 
 
 ### Build Commands
-Build
-	rasa train nlu
-	rasa train
-Open a Terminal
-	rasa run -m models --enable-api --cors "*" -p 5021
-Open a Terminal
-	rasa run action -vv
-Open Browser
-	home.html
+Build <br>
+	rasa train nlu <br>
+	rasa train <br>
+Open a Terminal <br>
+	rasa run -m models --enable-api --cors "*" -p 5021 <br>
+Open a Terminal <br>
+	rasa run action -vv <br>
+Open Browser <br>
+	home.html <br>
 
 
 
