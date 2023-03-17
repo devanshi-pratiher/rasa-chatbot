@@ -9,7 +9,7 @@
 - Ability to have at least 2 multi-turn conversations where the user may ask follow-up questions once the bot responds to their original query.
 - Ability to collect data from the user, e.g., on what date did the issue occur, how many items did you have in your order, etc.
 - Ability to engage in some amount of small talk (e.g., hi, how are you, etc.)
-- Ability to use a database (SQLite) to store information obtained from the user (note that interacting with the database does not count as using an API)
+- Ability to use a database (SQLite) to store information obtained from the user.
 
   - User starts with greetings.
   - Chatbot asks about username and password (which is saved in the database).
