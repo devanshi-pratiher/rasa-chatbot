@@ -1,0 +1,190 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- name_pls
+- user_submitted_room
+- user_submitted_usn
+- user_wants_to_check_home
+- user_submitted_password
+- user_wants_to_check_light_status
+- user_wants_to_check_fan_status
+- user_wants_to_check_ac_status
+- user_wants_to_check_alarm_status
+- user_wants_to_check_status 
+- user_wants_to_control_lights
+- user_wants_to_control_fans
+- user_wants_to_control
+- user_wants_status
+- chit_chat
+- user_wants_to_on_off_lights
+- user_wants_to_on_off_alarms
+- user_wants_to_on_off_ac
+- user_room_options
+- ask_residence
+- user_wants_to_on_off_fans
+- user_wants_to_control_ac
+
+responses:
+  utter_greet:
+  - text: hello there
+    
+  utter_options:  
+  - buttons:
+    - payload: I would like to control home appliances
+      title: Control
+    - payload: I would like to check the status of appliances
+      title: Status
+    text: Hey! Hope you are doing well. Below are the Control/Status available..
+  
+  utter_user_wants_to_control:
+  - buttons:
+    - payload: I would like to control lights
+      title: Lights
+    - payload: I would like to control fans
+      title: Fans
+    - payload: I would like to control ac
+      title: AC
+    text: Hey! Hope you are doing well. Below are the Controlavailable..
+
+  utter_user_wants_status:
+  - buttons:
+    - payload: I would like to know light status
+      title: Lights
+    - payload: I would like to know fan status
+      title: Fans
+    - payload: I would like to know ac status
+      title: AC
+    - payload: I would like to know alarm status
+      title: Alarms
+    text: Hey! Hope you are doing well. Below are the Status available..
+  
+  utter_user_room_options:
+  - buttons:
+    - payload: I would like to access living room 
+      title: Living 
+    - payload: I would like to access kitchen room 
+      title: Kitchen
+    - payload: I would like to access hall room 
+      title: Hall
+    - payload: I would like to access bed room 
+      title: Bed
+    text: Hey! Hope you are doing well. Below are the options available..
+
+  utter_user_wants_to_on_off_light:
+  - buttons:
+    - payload: I would like to make lights on
+      title: OnLight
+    - payload: I would like to make lights off
+      title: OffLight
+    text: Hey! Hope you are doing well. Below are the options available..
+
+  utter_user_wants_to_on_off_alarms:
+  - buttons:
+    - payload: I would like to make alarms on
+      title: OnAlarm
+    - payload: I would like to make alarms off
+      title: OffAlarm
+    text: Hey! Hope you are doing well. Below are the options available..
+
+  utter_user_wants_to_on_off_ac:
+  - buttons:
+    - payload: I would like to make ac on
+      title: OnAc
+    - payload: I would like to make ac off
+      title: OffAc
+    text: Hey! Hope you are doing well. Below are the options available..
+
+  utter_user_wants_to_on_off_fan:
+  - buttons:
+    - payload: I would like to make fans on
+      title: OnFan
+    - payload: I would like to make fans off
+      title: OffFan
+    text: Hey! Hope you are doing well. Below are the options available..
+
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to make you happy:'
+  utter_did_that_help:
+  - text: Did that help you?
+
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Have a good day!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_wrong_value:
+  - text: Enter the valid headset!
+  utter_thanks:
+    - text: Thank you for calling Innovate Yourself.
+  utter_anything_else:
+    - text: Is there anything else I can help you with?
+  utter_ask_usn:
+  - text: Please enter your name
+  utter_ask_password:
+  - text: Please enter your password
+  utter_status_info:
+  - text: Here is the status 
+
+  utter_solution:
+  - text: Sure sir, I will guide you for that. Go to your settings, select network,
+      and select 3G if you’ve chosen 4G because your sim is not supporting 4G. That’s
+      why you are facing problems while calling.
+  utter_submit:
+  - text: Your name is {name} and your headset is {headset}. Is this correct?
+  utter_tell_issue:
+  - text: Thanks for confirming, tell me what issues you are facing?
+  utter_your_num:
+  - text: Your number is {number}?
+
+  utter_fan_info:
+  - text: On
+  utter_light_info:
+  - text: Off
+  utter_ac_info:
+  - text: done
+  utter_my_name:
+  - text: Devanshi
+  utter_off_status:
+  - text: Status off  
+
+  utter_residence:
+  - text: I live in this app all day long.
+  - text: The virtual world is my playground. I'm always here.
+  - text: Right here in this app. Whenever you need me.
+  
+  utter_fallback:
+  - buttons:
+    - payload: No Appliances
+      title: No Appliances
+    - payload: No rooms Available
+      title: No Rooms
+    - payload: goodbye
+      title: Goodbye
+    text: Sorry! I couldn't get you! Please use one of the following options.
+
+actions:
+
+- validate_credentials_and_display_status
+- validate_credentials_and_display_fans
+- validate_credentials_and_display_ac
+- display_upcoming_alarms
+- action_ac_info
+- action_fan_info
+- action_alarm_info
+- action_ask_password
+- action_ask_usn
+- action_light_info
+- action_your_residence
+- action_my_fallback
+- validate_credentials_and_display_lights

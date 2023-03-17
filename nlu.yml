@@ -1,0 +1,254 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: name_pls
+  examples: |
+    - Great Let's Started.. 
+    - What is Youe Name Please?
+    - What is Your Name?
+
+- intent: user_wants_to_control
+  examples: |
+    - I would like to control home appliances
+    - Please tell me to control appliances 
+  
+- intent: user_wants_status
+  examples: |
+    - I would like to check the status of appliances
+    - Please tell me about status of appliances
+
+
+- intent: user_wants_to_check_ac_status
+  examples: |
+    - I would like to know ac status
+    - Please tell me about ac
+    - I want to know about my ac status
+
+- intent: user_wants_to_check_fan_status
+  examples: |
+    - I would like to know fan status
+    - Please tell me about fan
+    - I want to know about my fan status
+
+
+- intent: user_wants_to_check_light_status
+  examples: |
+    - I would like to know light status
+    - Please tell me about light
+    - I want to know how many lights are on
+    - I would like to know how many lights are off
+    - I would like to know how many fans are off
+    - Please display my light details
+
+- intent: user_wants_to_control_lights
+  examples: |
+    - I would like to control lights
+    - Pls. allow to control lights
+
+- intent: user_room_options
+  examples: |
+    - I would like to access living room 
+    - I would like to access bed room 
+    - I would like to access kitchen room 
+    - I would like to access hall room 
+
+- intent: user_wants_to_on_off_fans
+  examples: |
+    - I would like to make fans on
+    - I would like to make fans off
+
+- intent: user_wants_to_on_off_lights
+  examples: |
+    - I would like to make lights on
+    - I would like to make liggts off
+
+- intent: user_wants_to_on_off_ac
+  examples: |
+    - I would like to make ac on
+    - I would like to make ac off
+
+- intent: user_wants_to_on_off_alarms
+  examples: |
+    - I would like to make alarms on
+    - I would like to make alarms off
+
+- intent: user_wants_to_control_fans
+  examples: |
+    - I would like to control fans
+    - I would like to on leaving room fans
+    - I would like to on bed room fans
+    - I would like to on kitchen room fans
+    - I would like to off living room fans
+    - I would like to off bed room fans
+    - I would like to off kitchen room fans
+
+- intent: user_wants_to_check_alarm_status
+  examples: |
+    - I would like to know alarm status
+    - Tell me about alarm status
+
+- intent: user_wants_to_control_ac
+  examples: |
+    - I would like to control ac
+    - I would like to on ac
+    - I would like to off ac
+
+- intent: user_submitted_room
+  examples: |
+    - leaving room
+    - kitchen room 
+    - bed room
+
+- intent: utter_user_lights_options
+  examples: |
+    - I would like to control living room lights
+    - I would like to control bed room lights
+    - I would like to control kitchen room lights
+
+- intent: utter_user_lights_option_on_off
+  examples: |
+    - I would like to control living room lights
+    - I would like to control bed room lights
+    - I would like to control kitchen room lights
+
+
+- intent: user_submitted_usn
+  examples: |
+    - Devanshi
+    - Sally
+    - Joe
+
+- intent: user_submitted_password
+  examples: |
+    - 123
+    - 12345
+    - 1234
+
+
+- intent: user_wants_to_check_upcoming_alarms
+  examples: |
+    - I would like to know about events for this month
+    - Show me this month's holidays
+    - When is my next holiday
+    - I want to know about holidays
+    - Can you please tell me about upcoming holidays
+
+- intent: ask_residence
+  examples: |
+    - where do you live
+    - in which city do you live
+    - whats your residence
+    - wheres your home
+    - wheres your house
+    - your city 
+    - your town
+    - whats your hometown
+    - where do you stay
+    - where's your residence
+    - what is your city
+    - where are you staying
+    - wer do u stay
+
+- intent: chit_chat
+  examples: |
+    - blablablablalblab
+    - asdasdasdasd
+    - hmmmmmm
+    - hahahha
+    - ..
+    - where are you
+    - what do you
+    - ..
+    - what else can you do
+    - whats the weather update
+    - im sleeping
