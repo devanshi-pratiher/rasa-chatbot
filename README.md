@@ -53,7 +53,7 @@ Build <br>
 Open a Terminal <br>
 	rasa run -m models --enable-api --cors "*" -p 5021 <br>
 	
-Open a Terminal <br>
+Open a new Terminal <br>
 	rasa run action -vv <br>
 	
 Open Browser <br>
